@@ -10,11 +10,8 @@ This setup simulates production-style monitoring, alerting, and cost-optimizatio
 
 ## 🏗 Architecture Flow
 
-EC2 Instance  
-→ CloudWatch monitors CPUUtilization  
-→ If CPU > 5% = OK state  
-→ If CPU ≤ 5% (for evaluation period) = ALARM state  
-→ SNS Notification + EC2 Termination Action  
+EC2 Instance  → CloudWatch monitors CPUUtilization  → If CPU > 5% = OK state  
+→ If CPU ≤ 5% (for evaluation period) = ALARM state  → SNS Notification + EC2 Termination Action  
 
 **Threshold Value:** 5%  
 **Evaluation Period:** 10 minutes (2 datapoints × 5 minutes)
