@@ -20,6 +20,7 @@ Automated lifecycle management of Amazon EC2 instances by monitoring CPU utiliza
 ---
 
 ## 🏗 Architecture
+
 **Workflow:**  
 EC2 Instance → CloudWatch monitors `CPUUtilization` → Alarm triggers (CPU ≤ 5% for 1 minute) → SNS Notification → Automatic EC2 Termination  
 
