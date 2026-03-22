@@ -3,7 +3,7 @@
 ---
 
 ## 📌 Project Overview
-Automated lifecycle management of Amazon EC2 instances by monitoring CPU utilization and terminating idle instances. 0This setup reduces manual overhead, prevents cost leakage, and demonstrates event-driven infrastructure automation.
+Automated lifecycle management of Amazon EC2 instances by monitoring CPU utilization and terminating idle instances. This setup reduces manual overhead, prevents cost leakage, and demonstrates event-driven infrastructure automation.
 
 ---
 
@@ -21,13 +21,13 @@ Automated lifecycle management of Amazon EC2 instances by monitoring CPU utiliza
 
 ## 🏗 Architecture
 **Workflow:**  
-EC2 Instance → CloudWatch monitors `CPUUtilization` → Alarm triggers (CPU ≤ 5% for 10 mins) → SNS Notification → Automatic EC2 Termination  
+EC2 Instance → CloudWatch monitors `CPUUtilization` → Alarm triggers (CPU ≤ 5% for 1 minute) → SNS Notification → Automatic EC2 Termination  
 
 ---
 
 ## ⚙️ Implementation Summary
 - EC2 instance launched in a public subnet using t3.micro.  
-- CloudWatch alarm configured with a 5% CPU threshold and 10-minute evaluation window.  
+- CloudWatch alarm configured with a 5% CPU threshold and **1-minute evaluation window (1 datapoint × 60 seconds)**.  
 - SNS topic created with email subscription for real-time alerts.  
 - Alarm action configured to automatically terminate idle instances.
 
