@@ -3,7 +3,7 @@
 ---
 
 ## 📌 Project Overview
-Automated lifecycle management of Amazon EC2 instances by monitoring CPU utilization and terminating idle instances. This setup reduces manual overhead, prevents cost leakage, and demonstrates event-driven infrastructure automation.
+Automated lifecycle management of Amazon EC2 instances by monitoring CPU utilization and terminating idle instances. 0This setup reduces manual overhead, prevents cost leakage, and demonstrates event-driven infrastructure automation.
 
 ---
 
@@ -74,8 +74,7 @@ EC2 Instance → CloudWatch monitors `CPUUtilization` → Alarm triggers (CPU �
 
 ## 📂 Repository Files
 - `README.md` – Project documentation  
-- `architecture.jpg` – Architecture diagram  
-- `screenshots/` – Contains CloudWatch, SNS, and EC2 snapshots  
+- `Snapshots - 5` – Contains project snapshots   
 
 ---
 
