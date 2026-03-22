@@ -41,7 +41,7 @@ EC2 Instance → CloudWatch monitors `CPUUtilization` → Alarm (CPU ≤ 5% for 
 
 ## 📂 Repository Files
 - `README.md` – Project documentation  
-- `Snapshots.pdf` – Project snapshots  
+- `Snapshots.pdf` – Deployment snapshots  
 
 ## 📸 Snapshots Include
 - EC2 instance running before termination  
