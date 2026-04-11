@@ -39,10 +39,6 @@ EC2 Instance → CloudWatch monitors `CPUUtilization` → Alarm (CPU ≤ 5% for 
 - Hands-on experience with monitoring, alerting, and operational metrics triggering actions  
 - Strengthened understanding of AWS event-driven workflows  
 
-## 📂 Repository Files
-- `README.md` – Project documentation  
-- `Snapshots.pdf` – Deployment snapshots  
-
 ## 📸 Snapshots Include
 - EC2 instance running before termination  
 - CloudWatch alarm state transitions  
